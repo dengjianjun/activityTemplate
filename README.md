@@ -1,14 +1,32 @@
 # {{name}}
-### Install package
-#### Use npm
-```shell
-$ npm install
+
+## Project setup
 ```
-#### Use yarn
-```shell
-$ yarn
+yarn install
 ```
-### Usage
-`npm run dev` or `yarn run dev`
+
+### Compiles and hot-reloads for development
+```
+yarn run dev
+```
+
+### Compiles and minifies for production
+```
+yarn run build
+```
+
+### Run your tests
+```
+yarn run test
+```
+
+### Lints and fixes files
+```
+yarn run lint
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
+
 ### License
 MIT
