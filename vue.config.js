@@ -93,7 +93,6 @@ module.exports = {
   // 修改webpack config, 使其不打包externals下的资源
   configureWebpack: config => {
     const myConfig = {
-      name: '退款申请',
       resolve: {
         alias: {
           '@': resolve('src')

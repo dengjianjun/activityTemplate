@@ -7,18 +7,7 @@ import request from 'axios'
 Vue.config.productionTip = false
 request.defaults.baseURL = process.env.VUE_APP_BASE_API
 Vue.prototype.request = request
-
-// const zzid = getQuery('zzid')
-// const id = getQuery('id')
-// TODO:先定死
-// const userInfo = {
-//   // hashCode:'ZI8TNF',
-//   hashCode: zzid || '4CYBGI',
-//   name: 'panda',
-//   userId: id || '5dc2ad2089dbbe1ba05a7859'
-// }
 Vue.prototype.getQuery = getQuery
-// Vue.prototype.userInfo = window.ZEPETO ? window.ZEPETO.userInfo : userInfo
 
 new Vue({
   render: h => h(App),
@@ -32,9 +21,9 @@ function getQuery(name) {
   return null;
 }
 
-// if (process.env.NODE_ENV !== 'production') {
+if (process.env.NODE_ENV !== 'production') {
   showDebugger()
-// }
+}
 
 function showDebugger () {
   const VConsole = require('vconsole')

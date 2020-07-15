@@ -3,7 +3,7 @@
     <img src="../assets/zaizai_logo.png" class="logo" alt="logo">
     <div class="content">
       <p>请按实际需求修改本文件<p/><br>
-      <p>本脚手机架提供基本的Confirm、Dialog、Loading、Toast组件</p>
+      <p>本脚手架提供基本的Confirm、Dialog、Loading、Toast组件</p>
     </div>
     <div class="bottom">
       <a href="javascript:;" class="btn active" @click="showDialog">点击弹窗</a>
