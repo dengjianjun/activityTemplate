@@ -1,7 +1,13 @@
 {
-  "name": "abc",
+  "name": "{{name}}",
   "version": "1.0.0",
-  "private": true,
+  "description": "{{description}}",
+  "author": "{{author}} <{{mail}}>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "{{repository}}"
+  },
   "scripts": {
     "dev": "vue-cli-service serve",
     "beta": "vue-cli-service serve --mode beta",

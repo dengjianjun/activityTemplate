@@ -44,12 +44,12 @@ module.exports = {
       return args
     })
 
-    config
-        .plugin('html')
-        .tap(args => {
-          args[0].title= '退款申请'
-          return args
-        })
+    // config
+    //     .plugin('html')
+    //     .tap(args => {
+    //       args[0].title= '页面要显示的title'
+    //       return args
+    //     })
 
     config
         .when(process.env.NODE_ENV !== 'production',
