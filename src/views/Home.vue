@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <img src="../assets/zaizai_logo.png" class="logo" alt="logo">
+    <img src="../assets/logo.png" class="logo" alt="logo">
     <div class="content">
       <p>请按实际需求修改本文件<p/><br>
       <p>本脚手架提供基本的Confirm、Dialog、Loading、Toast组件</p>

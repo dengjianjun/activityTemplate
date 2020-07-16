@@ -1,7 +1,6 @@
 import Vue from 'vue'
 import App from './App.vue'
 import './assets/index.css'
-import 'lib-flexible/flexible'
 import request from 'axios'
 
 Vue.config.productionTip = false
@@ -26,9 +25,10 @@ if (process.env.NODE_ENV !== 'production') {
 }
 
 function showDebugger () {
-  const VConsole = require('vconsole')
-  // eslint-disable-next-line
-  const vConsole = new VConsole()
+  const script = document.createElement('script');
+  script.src="//cdn.jsdelivr.net/npm/eruda";
+  document.body.appendChild(script);
+  script.onload = ()=> { eruda.init() }
 
   const button = document.createElement('button')
   button.onclick = () => {
