@@ -1,5 +1,6 @@
-const px2rem = require('postcss-px2rem');
-const postcss = px2rem({
+const postcssPx2rem = require('postcss-px2rem');
+const autoprefixer = require('autoprefixer');
+const px2rem = postcssPx2rem({
   remUnit: 100
 });
 const path = require('path')
@@ -28,7 +29,14 @@ module.exports = {
     loaderOptions: {
       postcss: {
         plugins: [
-          postcss
+          px2rem,autoprefixer({
+            browsers: [
+              'last 10 Chrome versions',
+              'last 5 Firefox versions',
+              'Safari >= 6',
+              'ie> 8'
+            ]
+          })
         ]
       }
     },
