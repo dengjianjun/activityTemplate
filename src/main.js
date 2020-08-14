@@ -67,5 +67,5 @@ function showDebugger () {
       $this.style.top = yMM + 'px'
     }
   })
-  document.body.append(button)
+  document.body.appendChild(button)
 }

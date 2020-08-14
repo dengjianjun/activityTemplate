@@ -9,7 +9,8 @@
     "url": "{{repository}}"
   },
   "scripts": {
-    "dev": "vue-cli-service serve",
+    "dev": "vue-cli-service serve --open --copy",
+    "start": "npm run dev",
     "beta": "vue-cli-service serve --mode beta",
     "stage": "vue-cli-service serve --mode staging",
     "prod": "vue-cli-service serve --mode production",
@@ -49,6 +50,10 @@
       "parser": "babel-eslint"
     },
     "rules": {}
+  },
+  "engines": {
+    "node": ">= 6.0.0",
+    "npm": ">= 3.0.0"
   },
   "browserslist": [
     "iOS >= 8",
